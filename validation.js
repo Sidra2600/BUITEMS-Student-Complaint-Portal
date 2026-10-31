@@ -1,0 +1,2 @@
+'use strict';
+const V={escape:s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])),email:s=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s),day:()=>new Date().toLocaleDateString('en-CA'),images:files=>{if(files.length<1||files.length>3)throw Error('Attach 1 to 3 evidence photos.');for(const f of files)if(!['image/jpeg','image/png','image/webp'].includes(f.type)||f.size>2*1024*1024)throw Error('Use JPG, PNG or WebP images under 2 MB each.');}};

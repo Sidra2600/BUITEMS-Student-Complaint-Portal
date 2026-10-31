@@ -1,0 +1,16 @@
+24 October 2026 — Validation summary
+PASS: JavaScript syntax checks.
+PASS: demo complaint creation and persistence; two-per-day limit.
+PASS: assignment; staff-only visibility; another staff member cannot resolve ticket.
+PASS: resolution, Unlike/reopen, re-resolution, Like/close, repeated feedback rejection.
+PASS: category add/rename/remove; user add/edit/remove.
+PASS: desktop browser login/demo entry, student dashboard layout, ticket detail dialog,
+      Unlike updates status and counters to Reopened / Escalated.
+NOT VERIFIED: PHP/MySQL execution (runtime unavailable); real email (not configured);
+      mobile device browser; operating-system folder picker (user interaction required).
+
+25 October 2026 update
+PASS: JavaScript syntax.
+PASS: browser switching Student -> Staff -> Admin -> Student via dashboard choices.
+PASS: three independent file inputs, preview placeholders and remove controls rendered.
+NOT VERIFIED: actual browser file upload; browser permission gate declined test upload.
